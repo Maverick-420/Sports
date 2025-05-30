@@ -13,7 +13,9 @@ const UpcomingMatches = () => {
 
     try {
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      const response = await fetch("http://localhost:3000/api/matches");
+      const response = await fetch(
+        "https://sports-j53m.onrender.com/api/matches"
+      );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
