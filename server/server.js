@@ -6,7 +6,7 @@ require("dotenv").config();
 const app = express();
 app.use(
   cors({
-    origin: ["https://sports-tau-six.vercel.app"],
+    origin: ["https://sports-zi1o.vercel.app"],
     methods: ["GET", "POST"],
     credentials: true,
   })
